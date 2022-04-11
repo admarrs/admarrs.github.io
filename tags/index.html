@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <link type="application/atom+xml" rel="alternate" href="atom.xml" title="REPL Adventures">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="relative min-h-screen">
+
+    <header class="text-gray-600 body-font">
+      <div class="mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/">
+          <span class="ml-3 text-2xl">Autonomous Engineer</span>
+        </a>
+        <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <!--<a class="mr-5 hover:text-gray-900 text-xl hover:underline">Popular</a>-->
+          <a class="mr-5 hover:text-gray-900 text-xl hover:underline" href="/tags">Tags</a>
+          <!--<a class="mr-5 hover:text-gray-900 text-xl hover:underline">About</a>
+          <a class="mr-5 hover:text-gray-900 text-xl hover:underline">RSS</a>-->
+        </nav>
+      </div>
+    </header>
+
+    <div class="flex flex-col relative">
+      <div class="container mx-auto w-3/5 px-24 pt-12 pb-24"><div style="flex flex-col flex-grow"><div><h1 class="text-2xl text-blue-600 font-bold pb-8">engineering</h1><p class="flex justify-between pb-8"><a href="/on-engineering-onboarding.html">On Engineering Onboarding</a><span class="w-1/5">Apr 9, 2022</span></p></div><div><h1 class="text-2xl text-blue-600 font-bold pb-8">management</h1><p class="flex justify-between pb-8"><a href="/on-engineering-onboarding.html">On Engineering Onboarding</a><span class="w-1/5">Apr 9, 2022</span></p></div></div></div>
+    </div>
+
+    <footer class="absolute bottom-0 w-full">
+      <div class="flex p-4 text-gray-400 text-sm">
+        <nav class="flex flex-row justify-between w-full px-4">
+          <a class="hover:text-gray-900 hover:underline" href="/">© Al Marrs 2022</a>
+          <a class="hover:text-gray-900 hover:underline" href="/tags">Tags</a>
+          <!--<a class="hover:text-gray-900 hover:underline" href="">RSS</a>
+          <a class="hover:text-gray-900 hover:underline" href="">About</a>-->          
+        </nav>
+      </div>
+    </footer>
+    
+   
+
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((el) => {
+          if (!el.classList.contains('clojure')) {
+            hljs.highlightElement(el);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
